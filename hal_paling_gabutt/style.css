@@ -1,0 +1,19 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #ffffff; text-align: center; }
+.container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+header { margin-bottom: 20px; }
+h1 { color: #ff6600; font-size: 2.5rem; margin-bottom: 5px; }
+.main-content { display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: flex-start; }
+.camera-section { background: #1e1e1e; padding: 20px; border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+video { width: 100%; border-radius: 8px; background: #000; transform: scaleX(-1); }
+.controls { margin-top: 15px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+select { padding: 12px 15px; border: 1px solid #555; border-radius: 6px; font-size: 15px; cursor: pointer; background: #333; color: #fff; flex: 1; }
+#capture-btn { margin-top: 15px; padding: 12px 15px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; background-color: #4CAF50; color: #fff; font-weight: bold; transition: background-color 0.3s; width: 100%; }
+#capture-btn:hover { background-color: #45a049; }
+#capture-btn:disabled { background-color: #444; color: #888; cursor: not-allowed; }
+#status-text { margin-top: 15px; font-weight: bold; color: #ffeb3b; font-size: 1.1rem; min-height: 25px; }
+.result-section { background: #1e1e1e; padding: 20px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; gap: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+h2 { font-size: 1.5rem; color: #ccc; }
+#strip-canvas { max-width: 100%; height: auto; max-height: 600px; box-shadow: 0 8px 20px rgba(0,0,0,0.6); background-color: #222; border-radius: 4px; }
+#download-btn { background-color: #2196F3; width: 100%; padding: 12px; border: none; border-radius: 6px; color: white; font-weight: bold; cursor: pointer; font-size: 16px; }
+#download-btn:hover { background-color: #1976D2; }

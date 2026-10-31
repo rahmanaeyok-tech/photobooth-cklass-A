@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photobooth CEUNAHHH - Hal Paling Gabut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Photobooth CEUNAHHH </h1>
+            <p>Pilih Frame dan Filter, lalu jepret!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="camera-section">
+                <video id="video" autoplay playsinline></video>
+                <div class="controls">
+                    <select id="frame-select">
+                        <option value="f1">F1 Racing (In PTI We Trust)</option>
+                        <option value="archive">Archive Memory</option>
+                        <option value="spiderman">Spiderman</option>
+                        <option value="pink">Pink Gingham</option>
+                        <option value="brown">Brown Net</option>
+                    </select>
+                    
+                    <select id="filter">
+                        <option value="none">Normal</option>
+                        <option value="grayscale(100%)">Grayscale</option>
+                        <option value="sepia(100%)">Sepia</option>
+                        <option value="invert(100%)">Invert</option>
+                    </select>
+                </div>
+                <button id="capture-btn">Ambil 3 Foto</button>
+                <p id="status-text">kemera ciapppp.</p>
+            </div>
+
+            <div class="result-section">
+                <h2>Preview & Hasil</h2>
+                <canvas id="strip-canvas"></canvas>
+                <button id="download-btn" style="display:none;">DOWLOADDD BOSSSS</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
